@@ -4,8 +4,21 @@ var game = {
   deck: [],
   players: [],
   hands: [],
-  buildDeck: function(){
+  buildDeck: function(n){
+    var deck = new Array();
 
+    var m = values.length * suits.length;
+
+    this.deck = new Array(m * n);
+
+    for (i = 0; i < n; i++) {
+      for (j = 0; j < suits.length; j++) {
+        for (k = 0; k < ranks.length; k++) {
+          this.deck[i * m + j * ranks.length + k] = new Card(ranks[k], suits[j]);
+        };
+      };
+    };
+    debugger;
   },
   shuffleDeck: function(){
 
