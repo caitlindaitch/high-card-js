@@ -10,10 +10,7 @@ var name = prompt("What is your name?")
 Game function
   Establish a new array called Deck (or object?) to contain the combination of suits and values that will create the deck of cards
 
-  Set the variable "m" equal to the length of values * suits
-
-  For all values starting with zero, for the length of m, and incrementing by 1 each time
-    Push the index of the value array WITH the index value of the suits array until the value array is finished, then iterate through the next suit. (Would this require two for loops?? How do you get this working?)
+  Create a new value forEach of the values in the value array and suit array, combine the two when pushing into the Deck array
 
   Loop through each index value of the array
     Use math.Random to randomize the placement of each item in the array

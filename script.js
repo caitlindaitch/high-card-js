@@ -13,7 +13,7 @@ var game = {
     });
   },
   shuffleDeck: function(){
-    deck[i] = Math.random()
+    
   },
   getMorePlayers: function(){
 
