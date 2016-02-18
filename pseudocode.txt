@@ -1,0 +1,28 @@
+Pseudocode:
+
+Creating a deck:
+
+Array containing values
+Array containing suits
+
+var name = prompt("What is your name?")
+
+Game function
+  Establish a new array called Deck (or object?) to contain the combination of suits and values that will create the deck of cards
+
+  Set the variable "m" equal to the length of values * suits
+
+  For all values starting with zero, for the length of m, and incrementing by 1 each time
+    Push the index of the value array WITH the index value of the suits array until the value array is finished, then iterate through the next suit. (Would this require two for loops?? How do you get this working?)
+
+  Loop through each index value of the array
+    Use math.Random to randomize the placement of each item in the array
+
+  Create an array players, push one additional player to the array if prompted to do so
+
+  Loop through the player array and use math.Random to assign a random value to each player
+    Define math.Random by associating each return value with a different playing card value
+
+  Compare all values with one another
+    if player[0] > player[1] && player[0] > player [2]
+      alert(name + " won the game with " + winning player's card)

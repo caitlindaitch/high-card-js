@@ -21,7 +21,7 @@ var game = {
     debugger;
   },
   shuffleDeck: function(){
-
+    deck[i] = Math.random()
   },
   getMorePlayers: function(){
 
