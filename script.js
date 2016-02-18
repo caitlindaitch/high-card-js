@@ -4,21 +4,13 @@ var game = {
   deck: [],
   players: [],
   hands: [],
-  buildDeck: function(n){
-    var deck = new Array();
-
-    var m = values.length * suits.length;
-
-    this.deck = new Array(m * n);
-
-    for (i = 0; i < n; i++) {
-      for (j = 0; j < suits.length; j++) {
-        for (k = 0; k < ranks.length; k++) {
-          this.deck[i * m + j * ranks.length + k] = new Card(ranks[k], suits[j]);
-        };
-      };
-    };
-    debugger;
+  buildDeck: function(){
+    values.forEach(function (a) {
+      for(var i = 0; i < suits.length; i++) {
+        game.deck.push(a + suits[i]);
+      }
+      return this.deck;
+    });
   },
   shuffleDeck: function(){
     deck[i] = Math.random()
